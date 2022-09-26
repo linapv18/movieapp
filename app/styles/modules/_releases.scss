@@ -1,0 +1,64 @@
+.releases {
+  width: 100%;
+  margin: auto 21px;
+
+  &__title {
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 51px;
+    padding-top: 12px;
+  }
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+
+  &__image {
+    width: 292px;
+    position: relative;
+    text-align: left;
+    color: $white;
+    z-index: -1;
+    margin: 24px 0 40px;
+
+    &:after {
+      display: block;
+      position: relative;
+      background-image: $gradient;
+      margin-top: -400px;
+      height: 400px;
+      width: 100%;
+      content: "";
+    }
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 0px;
+    z-index: 123;
+  }
+
+  &__genre {
+    @include genre;
+  }
+
+  &__titles {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}

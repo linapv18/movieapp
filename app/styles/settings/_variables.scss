@@ -1,0 +1,29 @@
+$background: #1d1d1d;
+$dark: rgba(29, 29, 29, 0.5);
+$white: #fff;
+$teal: #0feffd;
+$box-shadow: 0px 40px 40px 8px rgba(0, 0, 0, 0.16);
+$small-devices: 767.98px;
+$medium-devices: 991.98px;
+$gradient:linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 0.8) 80.79%);
+$hero-gradient:linear-gradient(269.96deg, rgba(29, 29, 29, 0) 0.04%, rgba(29, 29, 29, 0.8) 99.5%);
+
+@mixin icons($color) {
+  padding: 0px auto;
+  color: $color;
+  width: 16px;
+  justify-content: center;
+}
+
+@mixin genre {
+  font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: $dark;
+    border-radius: 0px 8px;
+    color: $teal;
+    padding: 4px 8px 4px 8px;
+
+}
