@@ -2,11 +2,18 @@
   height: 648px;
   width: 100%;
   display: flex;
-  background-image: url("../images/godzilla_bg.png");
   background-size: cover;
   background-position: center;
   gap: 260px;
   position: relative;
+
+  &:after {
+    position: absolute;
+    inset: 0;
+    background-color: rgba($background, 0.5);
+    content: "";
+    z-index: 1;
+  }
 }
 .sidebar {
   display: flex;
@@ -15,9 +22,10 @@
   background-color: rgba($background, 0.8);
   box-shadow: $box-shadow;
   backdrop-filter: blur(12px);
-  height: 1000px;
+  height: 100%;
   padding-top: 40px;
   gap: 90px;
+  z-index: 10;
   
   &__buttons {
     display: flex;
@@ -41,6 +49,7 @@
   gap: 16px;
   width: 632px;
   margin-top: 164px;
+  z-index: 10;
 
   &__genre {
     @include genre;
@@ -96,6 +105,8 @@
   gap: 40px;
   flex-direction: row;
   margin: 20px 0 0 120px;
+  z-index: 10;
+
   &__icon {
     @include icons($white);
   }

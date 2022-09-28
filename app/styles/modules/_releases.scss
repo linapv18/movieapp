@@ -9,7 +9,6 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    margin-left: 51px;
     padding-top: 12px;
   }
 }
@@ -17,14 +16,12 @@
 .movies {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+  gap: 12px;
 
   &__image {
-    width: 292px;
     position: relative;
     text-align: left;
     color: $white;
-    z-index: -1;
     margin: 24px 0 40px;
 
     &:after {
