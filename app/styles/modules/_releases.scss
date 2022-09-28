@@ -1,6 +1,6 @@
 .releases {
   width: 100%;
-  margin: auto 21px;
+  padding: 0 21px;
 
   &__title {
     color: $white;
@@ -18,11 +18,17 @@
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
 
-  &__image {
+  &__card {
     position: relative;
     text-align: left;
     color: $white;
     margin: 24px 0 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
 
     &:after {
       display: block;
@@ -44,7 +50,7 @@
     gap: 18px;
     align-items: flex-start;
     padding: 0px;
-    z-index: 123;
+    z-index: 70;
   }
 
   &__genre {

@@ -1,0 +1,76 @@
+.popup {
+  display: flex;
+  color: $white;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: $background;
+  overflow:auto;
+  border-radius: 30px;
+  padding: 20px 30px;
+  box-shadow: $box-shadow;
+  align-items: center;
+  gap: 10px;
+  visibility: hidden;
+
+  &__close {
+    align-self: flex-start;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 0px;
+  }
+
+  &__genre {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: $light;
+    border-radius: 0px 8px;
+    color: $teal;
+    padding: 4px 8px 4px 8px;;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__score {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $grey;
+  }
+
+  &__date {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $grey;
+  }
+}
